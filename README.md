@@ -2,6 +2,9 @@
 
 An parameterized RMarkdown report!
 
+- Code: <https://github.com/SamEdwardes/demo-rmd-penguins>
+- Deployment: <https://colorado.rstudio.com/rsc/demo-rmd-penguins/>
+
 ![](report/imgs/report-screenshot.png)
 
 ## Usage
