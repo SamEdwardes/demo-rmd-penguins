@@ -17,6 +17,8 @@ knit_with_parameters("~/projects/demo-rmd-penguins/report.Rmd")
 
 ## Deployment
 
+### Git-backed
+
 To deploy the report to RStudio Connect:
 
 ```r
@@ -24,3 +26,14 @@ rsconnect::writeManifest("report")
 ```
 
 Then commit any changes to GitHub.
+
+### Programatic
+
+You can also deploy using the `rsconnect` api:
+
+```r
+rsconnect::deployDoc(
+  doc = "report/report.Rmd",
+  appTitle = "RMarkdown Penguins API Deployment"
+)
+```
